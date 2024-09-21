@@ -9,6 +9,6 @@ services:
         target: 5000
         published: 5000
     environment:
-      - MONGO_URI=mongodb+srv://tiwarikaushal2012:Ekpassword@cluster0.otvtm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      - MONGO_URI={Your_URI}
     healthcheck:
       test: [ "CMD", "curl", "-f", "http://127.0.0.1:5000/" ]
