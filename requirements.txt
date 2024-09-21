@@ -1,0 +1,5 @@
+flask
+pymongo
+marshmallow
+python-dotenv
+flask_limiter
