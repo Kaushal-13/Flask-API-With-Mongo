@@ -1,6 +1,4 @@
-Based on the Flask API code you provided, here's a draft of your `README.md` file:
 
-```markdown
 # Flask API with MongoDB and Rate Limiting
 
 This project is a simple REST API built using Flask and MongoDB (Atlas or local), with functionality to manage user data. The API includes rate limiting, pagination, and validation using `marshmallow`. 
@@ -156,6 +154,3 @@ This API applies rate limiting with a limit of **5 requests per minute** per IP 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
-
-Feel free to adjust this based on your project's specific details!
