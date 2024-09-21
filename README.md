@@ -55,16 +55,24 @@ python app.py
 The API will now be available at `http://127.0.0.1:5000`.
 
 ### 5. Using Docker (Optional)
-To run the project inside a Docker container:
-1. Build the Docker image:
-   ```bash
-   docker build -t flask-mongo-api .
-   ```
+### Docker Setup
 
-2. Run the Docker container:
+To run the project using Docker, you need to have Docker and Docker Compose installed on your machine.
+
+#### Build and Run the Docker Container
+
+To start your Flask application in a Docker container, follow these steps:
+
+1. **Create a `.env` file** in the root directory (if you haven't done so already) and add your MongoDB connection string:
+    ```
+    MONGO_URI=mongodb://localhost:27017/mydatabase  # or your MongoDB Atlas connection string
+    ```
+
+2. **Run Docker Compose**:
+   In the root of your project, execute:
    ```bash
-   docker run -d -p 5000:5000 --env-file .env flask-mongo-api
-   ```
+   docker-compose up --build
+
 
 The application should now be accessible at `http://localhost:5000`.
 
